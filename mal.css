@@ -1,0 +1,376 @@
+@import "https://malscraper.azurewebsites.net/covers/anime/prinixos/presets/datatitlebefore";
+@import "https://malscraper.azurewebsites.net/covers/manga/prinixos/presets/datatitlebefore";
+
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap');/* Overpass */
+
+/* Paste profile picture link inside url(   )*/
+.cover-block::before {background-image: url(https://cdn.myanimelist.net/images/userimages/11120973.webp?t=1613824200)}
+/* Adjust the banner value according to your preference */
+.cover-block .image-container img {top: -308px}
+
+*{border:none !important}
+
+.header{
+    display:none;
+}
+
+.list-container {
+    width:100%;
+    background-color:#0B1622 !important;
+}
+
+.cover-block {
+    width:100%;
+    overflow:hidden;
+    height:330px;
+    position:relative;
+}
+
+div#cover-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background:linear-gradient(180deg,rgba(6,13,34,0) 40%,rgba(6,13,34,.6));
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.cover-block::after{
+    content: 'prinixos';
+    position: absolute;
+    font-size: 18.5px;
+    color: #fff;
+    left:280px;
+    bottom:0px;
+    padding:22px 25px;
+    z-index: 2;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 800;
+}
+
+.cover-block::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    border-radius: 4px 4px 0 0;
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    z-index: 2;
+}
+
+.status-menu-container {
+    border-bottom:0px;
+    width:100%;
+    background-color:#151F2E;
+    height:50px;
+}
+
+.status-menu-container .status-menu .status-button{
+    color:rgb(114,138,161);
+    font-size:1.4em;
+    font-family: 'Overpass', sans-serif;
+    padding:18px 1em;
+    transition:200ms ease-in-out;
+}
+
+.status-menu-container .status-menu .status-button.on{
+    color:rgb(61,180,242);
+    font-weight: normal;
+}
+
+.status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after{
+    display:none;
+}
+
+.status-menu-container .status-menu .status-button:hover{
+    color:rgb(61,180,242);
+}
+
+.cover-block .image-container img {
+    max-width: 100%;
+    position: relative;
+}
+
+.list-table{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top:50px;
+    position: relative;
+}
+
+tbody{
+    background-color:#151F2E;
+}
+
+tbody:nth-child(1){
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    overflow:hidden;
+}
+
+.list-table .list-table-data .data.title{
+    width:300px;
+}
+
+.list-table .list-table-data .data a{
+    color: #fff !important;
+}
+
+.list-table .list-table-data .data.image a{
+    overflow: hidden;
+    height: 48px;
+    border-radius:3px;
+    position: relative;
+}
+
+.list-table .list-table-data .data.image a img{
+    margin-top:-10px;
+}
+
+.list-menu-float{
+    opacity:0;
+    transition:300ms ease-in-out;
+    z-index: 4;
+}
+
+.list-menu-float:hover{
+    opacity:1;
+}
+
+body{
+    overflow-x:hidden;
+    background-color:#0b1622 !important;
+}
+
+.list-table .list-table-data .data{
+    border-bottom:none;
+    padding:10px 0px;
+}
+
+.cover-block .image-container {
+    width: 100%;
+}
+
+.list-unit::after{
+    opacity:0;
+}
+
+.list-table .list-table-header .header-title .link.sort,
+.data.progress,
+.list-table .list-table-data .data.title .link,
+.score-label,
+.data.chapter,
+.data.volume,
+.type{
+    font-size: 15.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+    color: #fff !important;
+}
+
+.icon-watch{
+    opacity:0 !important;
+}
+
+.list-item{
+    position:relative;
+}
+
+.content-status{
+    pointer-events: none;
+    font-size: 0px !important;
+}
+
+a.icon-add-episode,
+a.icon-add-chapter,
+a.icon-add-volume{
+    margin-left:-15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 150ms ease-in-out;
+}
+
+.list-item:hover .icon-add-episode,
+.list-item:hover .icon-add-chapter,
+.list-item:hover .icon-add-volume{
+    opacity: 1;
+    margin-left: 5px;
+    pointer-events: all;
+}
+
+.content-status::after{
+    content:'';
+    position:absolute;
+    left:30px;
+    margin-top:5px;
+    height:7px;
+    width:7px;
+    background-color:rgb(123,213,85);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(123,213,85,.8);
+}
+
+.status.dropped::after{
+    content:'';
+    position:absolute;
+    height:7px;
+    width:7px;
+    margin-left:12px;
+    background-color:rgb(165 62 62);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(162,62,62,.8);
+}
+
+.status.plantowatch::after{
+    content:'';
+    position:absolute;
+    height:7px;
+    width:7px;
+    margin-left:12px;
+    background-color:#f9d457;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(249,212,87,.7);
+}
+
+.status{
+    background-color:#151F2E !important;
+    width:17px !important;
+}
+
+.list-unit{
+    width:1100px;
+}
+
+.list-status-title{
+    display:none !important;
+}
+
+.list-table .list-table-header .header-title{
+    background:none;
+}
+
+.header-title.image{
+    opacity:0;
+}
+
+.list-table-header{
+    height:57px;
+}
+
+#footer-block{
+    background-color:#11161D;
+}
+
+.list-unit .loading-space{
+    margin:0px;
+    margin-bottom: 38px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.loading-space{
+    background-color:#151f2e;
+}
+
+
+#gdpr-modal-bottom{
+    display:none;
+}
+
+#search-button{
+    display:none !important;
+}
+
+img::selection{
+    background: transparent;
+}
+
+.list-menu-float .icon-menu svg.icon{
+    fill:rgb(71, 184, 243) !important;
+}
+
+.List_LightBox::after{
+    content: '';
+    position: absolute;
+    left: 100px;
+    height: 51px;
+    width: 48px;
+    margin-top: -16.5px;
+    margin-left: -31px;
+    z-index: 2;
+}
+
+.add-edit-more{
+    font-size: 0px !important;
+}
+.list-table .list-table-data .data.image a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3797CB;
+    background-image: url('https://images2.imgbox.com/83/04/dIFk0Jap_o.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 150ms ease-in-out;
+}
+
+.list-item:hover{
+    background: #3DB4F2;
+}
+
+.list-item:hover .data.status{
+    background: #3DB4F2;
+    transition: 150ms ease-in-out;
+}
+
+tbody.list-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 68px;
+    width: 50px;
+}
+
+tbody.list-item:hover::before{
+    opacity: 1;
+    background: #3DB4F2;
+}
+
+.list-item:hover .list-table-data .data.image a::after{
+    opacity: 1;
+}
+
+
+tbody.list-item:hover .content-status::after{
+    opacity: 0;
+}
+
+.data.title a.link::before {
+    content: '';
+    height: 238px;
+    width: 168px;
+    position: absolute;
+    left: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: 150ms ease-in-out;
+    pointer-events: none;
+}
+
+.list-item:hover .data.title a.link::before {
+    opacity: 1;
+}
