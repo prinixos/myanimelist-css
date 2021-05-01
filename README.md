@@ -5,7 +5,7 @@
 ## WHY YOU NEED TO USE IT
 
 Don't get fooled by such a wonderful design it's not Anilist but its MAL. So as
-a silly weeb you are you would be thinking why prinix **why I need to change my
+a silly weeb you would be thinking why prinix **why I need to change my
 MAL list style?** The answer is really simple because it sucks it looks like
 some old dude with bald head make it with chopsticks and glue but on the other
 hand Anilist looks like OMG it looks like heaven on virtual earth the styling
