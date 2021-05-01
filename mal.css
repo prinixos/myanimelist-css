@@ -1,12 +1,14 @@
-@import "https://malscraper.azurewebsites.net/covers/anime/prinixos/presets/datatitlebefore";
-@import "https://malscraper.azurewebsites.net/covers/manga/prinixos/presets/datatitlebefore";
+/* CHANGE '___' to your username */
+@import "https://malscraper.azurewebsites.net/covers/anime/___/presets/datatitlebefore";
+@import "https://malscraper.azurewebsites.net/covers/manga/___/presets/datatitlebefore";
 
 /* Imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap');/* Overpass */
 
 /* Paste profile picture link inside url(   )*/
-.cover-block::before {background-image: url(https://cdn.myanimelist.net/images/userimages/11120973.webp?t=1613824200)}
+/* .cover-block::before {background-image: url( >>>>>> INSERT YOUR IMAGE URL<<<<<<<<< )} */
+.cover-block::before {background-image: url('')}
 /* Adjust the banner value according to your preference */
 .cover-block .image-container img {top: -308px}
 
