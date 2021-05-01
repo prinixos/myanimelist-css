@@ -19,7 +19,7 @@ Then the third question comes to your mind is prinix do we have to MAL monthly u
 ## INSTALLATION
 
 - **STEP-1 :** First you have to go to your list preference. [Click me.](https://myanimelist.net/editprofile.php?go=listpreferences)
-- **STEP-2 :** Check whether your settings are same as mine or not.
+- **STEP-2 :** Check whether your settings are same as mine or not. If not make it same as mine
   ![Default settings](./assets/default-settings.png)
   ![anime settings](./assets/anime-settings.png)
   ![manga settings](./assets/manga-settings.png)
