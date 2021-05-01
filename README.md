@@ -12,7 +12,7 @@ hand Anilist looks like OMG it looks like heaven on virtual earth the styling
 the animation and the image preview it's so good.
 
 Then there would be the second question. **Why not we use Anilist instead of MAL?**<br>
-Well you can absolutely do that, but you have also known for a fact that there are way more users in MAL than Anilist have, so I will suggest you to use both I use Anilist for day to day work and I update MAL one in a month so that its stats will always be updated
+Well you can absolutely do that, but you have also known for a fact that there are way more users in MAL than Anilist have, so I will suggest you to use both I use Anilist for day to day work and I update MAL once in a month so that its stats will always be updated
 
 Then the third question comes to your mind is prinix do we have to MAL monthly update manually than no I use this amazing repository [ALExport](https://github.com/MajorApplePie/ALExport) it can easily export all things from Anilist and what you have to is simply import it in you MAL account sound easy AF right I know.
 
